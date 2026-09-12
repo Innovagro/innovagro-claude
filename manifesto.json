@@ -78,7 +78,7 @@
       "arquivos": [
         {
           "caminho": "skills/conhecer-voce/SKILL.md",
-          "sha": "sha256:ed66201b1e198fe5cfb05bd8b3283d62d5797caf92a8df3dcf79c5daa9abd8e0"
+          "sha": "sha256:b8dd26d82cfac2e0ff1725a4fc99a84b542e128f3879e541bc8a06750e5101fd"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "arquivos": [
         {
           "caminho": "skills/criar-agente/SKILL.md",
-          "sha": "sha256:fb6095d2b35df442c9e7651e9163f27e8ef9411d305051d39d1144cd6f28bebb"
+          "sha": "sha256:b9dc47e4dfb12da6f7ced1364d69c5c8bc7bdca1ad3afff4548a5fe5cc9c50b4"
         },
         {
           "caminho": "skills/criar-agente/modelo-agente.md",
@@ -181,7 +181,7 @@
       "arquivos": [
         {
           "caminho": "skills/pedir-ajuda/SKILL.md",
-          "sha": "sha256:1e45aca3c89e8589b4bc4ea87540e8baaaf4e803ce2ddaf89533d2bce243119a"
+          "sha": "sha256:7624e57264a9a488bdfd3e82c6ff790e84c8ad98ec0e30efb0a00f614bd6251f"
         }
       ]
     },
@@ -203,7 +203,7 @@
       "arquivos": [
         {
           "caminho": "skills/planilha/SKILL.md",
-          "sha": "sha256:ab6d862c67fe5d1ef6bebc6b83a2cfbdca1ce9eff4cac0ad1485ea3cf0fd1dda"
+          "sha": "sha256:f2257e3f7d15226fa33f43f611870fe4b0c8d8ca520df02510ee0658811187ec"
         }
       ]
     },
@@ -247,7 +247,7 @@
       "arquivos": [
         {
           "caminho": "skills/trabalho-em-lote/SKILL.md",
-          "sha": "sha256:449b1f9ca4c6a4e0dfb8017817d3e2c4e0f5c80ad839673ba565eb2355ca6566"
+          "sha": "sha256:2fa02b40f5bb5422681b234c44672e2ef218f7bf1cc029e558b093d6d165a8c3"
         }
       ]
     },
@@ -269,7 +269,7 @@
       "arquivos": [
         {
           "caminho": "skills/voltar-versao/SKILL.md",
-          "sha": "sha256:0448bffa89d4c70e2786d37068212f3db33190b755b585b192888a1593ac93bd"
+          "sha": "sha256:6911f88a5589937ea96122971d25db759ee7d650efdb1e40692b18aeda4b9c0a"
         }
       ]
     }
@@ -308,11 +308,11 @@
       "gerenciado": [
         {
           "caminho": "agentes/Automacao/.claude/casa/REGRAS.md",
-          "sha": "sha256:183b45e84622375b74d5d414ffd714fb2bb93c2e704f7113bbc866a3112bb537"
+          "sha": "sha256:42547293705854ba2001b53e8c5cdabecb464ce6b2f46a60ba9b8c09c7fb3536"
         },
         {
           "caminho": "agentes/Automacao/.claude/skills/agendar-tarefa/SKILL.md",
-          "sha": "sha256:051f0492cae55aaace9fd648cab26de1a90be9efa1a4ada4b490972d5f3a6f10"
+          "sha": "sha256:4e1a65f9c9a013b5aabc1e0edffaf786f46422a2e60eef6e0937793dab8903ef"
         },
         {
           "caminho": "agentes/Automacao/.claude/skills/minhas-tarefas/SKILL.md",
@@ -331,7 +331,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Automacao/.claude/skills/agendar-tarefa/SKILL.md",
-              "sha": "sha256:051f0492cae55aaace9fd648cab26de1a90be9efa1a4ada4b490972d5f3a6f10"
+              "sha": "sha256:4e1a65f9c9a013b5aabc1e0edffaf786f46422a2e60eef6e0937793dab8903ef"
             }
           ]
         },
@@ -365,7 +365,7 @@
       "gerenciado": [
         {
           "caminho": "agentes/Dev/.claude/casa/REGRAS.md",
-          "sha": "sha256:c9ce0965bb16e848776be515c9be4951c5f6e4e6e12e847c2eb44fb7fb0c762c"
+          "sha": "sha256:a728f066b18803d7a5b59494145cb656baeda1c2de3e0cce921edeea6b04bf13"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
@@ -373,7 +373,7 @@
         },
         {
           "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-          "sha": "sha256:1870c2e068f7ef84cfd81160a1506a12a81bbf09d0a59884d6ca5e1484e5271c"
+          "sha": "sha256:6d90038e6a4671e96f76b005981a2090990cc8d469f885e471d32c97c6ff94c8"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
@@ -385,7 +385,7 @@
         },
         {
           "caminho": "agentes/Dev/.claude/skills/depurar/SKILL.md",
-          "sha": "sha256:e61bd6eb2f86e418bb23e337000349260bbdcad3d1c25e60119e0d8522ffc68a"
+          "sha": "sha256:3ae784f1b6e22714cae6398d56b3a7b22387dd61f9464fedf3838675e4df4bda"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/rodar-e-publicar/SKILL.md",
@@ -419,7 +419,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-              "sha": "sha256:1870c2e068f7ef84cfd81160a1506a12a81bbf09d0a59884d6ca5e1484e5271c"
+              "sha": "sha256:6d90038e6a4671e96f76b005981a2090990cc8d469f885e471d32c97c6ff94c8"
             }
           ]
         },
@@ -452,7 +452,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/depurar/SKILL.md",
-              "sha": "sha256:e61bd6eb2f86e418bb23e337000349260bbdcad3d1c25e60119e0d8522ffc68a"
+              "sha": "sha256:3ae784f1b6e22714cae6398d56b3a7b22387dd61f9464fedf3838675e4df4bda"
             }
           ]
         },
