@@ -43,7 +43,7 @@ Pergunte: "Você quer de volta **um arquivo** como estava, ou **desfazer tudo** 
 
 ## Nunca
 - Nunca use comandos que descartam trabalho (voltar à força, limpar a pasta, trocar o arquivo
-  atual pelo antigo). O Claudinn impede — e está certo.
+  atual pelo antigo) — vários deles são recusados, e apagar trabalho não se desfaz.
 - Nunca sobrescreva o arquivo atual.
 - Nunca use git no `Meu-Cerebro`/OneDrive. Lá, a versão antiga se recupera pelo próprio OneDrive:
   botão direito no arquivo › **Histórico de versões**.

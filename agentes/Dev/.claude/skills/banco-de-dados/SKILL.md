@@ -12,7 +12,7 @@ Supabase (Postgres na nuvem), mas os princípios são os mesmos.
 ## Onde o banco mora (regra dura)
 - O `.db`/`.sqlite` fica **sempre** em `codespace\Dev\<projeto>\dados\`.
 - **NUNCA** no `Meu-Cerebro`/OneDrive: banco sincronizado **corrompe** (o sync escreve no meio de uma
-  transação). O Claudinn bloqueia criar `.db` ali — e está certo.
+  transação). Por isso nunca crie o `.db` ali — sempre na `codespace`.
 - Backup: gere uma **cópia datada** com a data no nome, pro OneDrive, como arquivo novo:
   ```powershell
   & "$env:LOCALAPPDATA\Programs\Claudinn\ferramentas\sqlite3.exe" "dados\app.db" "VACUUM INTO 'C:\...\OneDrive - Innovagro\Meu-Cerebro\backups\backup-2026-09-13.db'"
@@ -40,7 +40,7 @@ Supabase (Postgres na nuvem), mas os princípios são os mesmos.
   ```
 - **Conferir o banco na mão:** o `sqlite3.exe` da casa abre o arquivo (`.tables`, `.schema`, um
   `SELECT`) **sempre com `--safe`** — sem essa flag o CLI aceitaria `.shell`/`.system`, `ATTACH` e
-  gravar em qualquer arquivo, e o Claudinn bloqueia. Com `--safe` a leitura funciona igual:
+  gravar em qualquer arquivo. Use `--safe` como boa prática; a leitura funciona igual:
   ```powershell
   & "$env:LOCALAPPDATA\Programs\Claudinn\ferramentas\sqlite3.exe" --safe "dados\app.db" ".tables"
   ```
@@ -66,7 +66,7 @@ Quem fala com o banco só sabe consultar — nenhuma regra de negócio:
 ## Nunca
 - Nunca guarde o banco (`.db` do SQLite ou a pasta `dados\pg` do PGlite) no OneDrive/Meu-Cerebro.
 - Nunca instale PostgreSQL, Docker ou serviço do Windows — Postgres local é **PGlite**.
-- Nunca use os comandos de host do `sqlite3` (`.shell`, `.system`, `.output`) — o Claudinn barra.
+- Nunca use os comandos de host do `sqlite3` (`.shell`, `.system`, `.output`) — o `--safe` já os evita.
 - Nunca use `better-sqlite3`/`sqlite3` do npm.
 - Nunca ponha regra de negócio na camada de dados.
 - Nunca monte query com texto concatenado; use parâmetros.

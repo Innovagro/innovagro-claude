@@ -73,7 +73,7 @@ Ajuste o que ela pedir e mostre de novo. **Só grave depois de um OK claro** ("p
    marcado `QUEM-SOU`, troque do mesmo jeito. Se não tiver, não mexa nele.
 3. Não mexa em mais nada desses arquivos.
 
-Se o **Claudinn impedir** a gravação: não tente de outro jeito. Diga "Não consegui gravar agora —
+Se a **gravação for recusada**: não tente de outro jeito. Diga "Não consegui gravar agora —
 vou deixar o texto aqui para você" e mostre o texto para a pessoa copiar.
 
 ## Fechar

@@ -31,8 +31,9 @@ cada um.** Ex.: "de cada um dos 40 contratos da pasta, tire cliente, volume, pre
 - Tudo que você gerar é **arquivo novo**. Os itens originais não são tocados.
 
 ## Nunca
-- **Nunca renomeie, mova ou apague em massa** — nem "para organizar". O Claudinn impede, e está
-  certo. Se a pessoa quiser organizar a pasta, faça uma **lista** do que sugere mover e ela faz.
+- **Nunca renomeie, mova ou apague em massa** — nem "para organizar". (Apagar é recusado; mover e
+  renomear é regra da casa.) Se a pessoa quiser organizar a pasta, faça uma **lista** do que sugere
+  mover e ela faz.
 - Muitos itens do mesmo tipo (100 planilhas, 200 linhas de um CSV) podem ser processados com um
   programa em **Python** (skill `planilha`) — mas mostre a amostra de 3 primeiro. Para documentos
   variados, faça com as ferramentas de leitura, um por vez, à vista.

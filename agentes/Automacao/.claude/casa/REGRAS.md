@@ -17,9 +17,9 @@ claude -p --permission-mode dontAsk "<a instrução>"
   Isso é de propósito (ver abaixo).
 - **NUNCA** a flag `--bare` — ela desligaria a cerca (hooks, MCP, skills). É proibida.
 - A pasta da tarefa fica **dentro da `codespace`**; o nome da tarefa começa com **`Claudinn\`**.
-O Claudinn só deixa criar tarefa nessa forma exata. Agendar um script (`.ps1`, `.bat`, `.py`), outro
-programa, ou o Claude sem essas condições **é bloqueado** — porque uma tarefa agendada roda fora da
-sua sessão, e essa é a porta dos fundos clássica.
+Crie tarefa **sempre** nessa forma exata. Não agende um script (`.ps1`, `.bat`, `.py`), outro
+programa, ou o Claude sem essas condições — porque uma tarefa agendada roda fora da sua sessão, e
+essa é a porta dos fundos clássica.
 
 ## O que só você faz (por causa do `dontAsk`)
 Rodando sozinha, a tarefa **não pode enviar nada** (e-mail, resposta, convite, mensagem no Teams): o

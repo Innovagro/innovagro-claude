@@ -1,6 +1,6 @@
 ---
 name: pedir-ajuda
-description: Prepara um pedido de ajuda claro para o assessor/TI quando algo trava — o Claudinn impediu, deu erro, o conector não liga, a tarefa precisa de algo que você não pode fazer. Use para "não funcionou", "deu erro", "travou", "pede ajuda", "chama o suporte", "fala com o TI", e sempre que o Claudinn impedir algo que a pessoa precisa.
+description: Prepara um pedido de ajuda claro para o assessor/TI quando algo trava — um comando foi recusado ou bloqueado, deu erro, o conector não liga, a tarefa precisa de algo que você não pode fazer. Use para "não funcionou", "deu erro", "travou", "pede ajuda", "chama o suporte", "fala com o TI", e sempre que um comando for recusado.
 ---
 
 # Pedir ajuda
@@ -9,7 +9,7 @@ Quando algo trava, a pior coisa é a pessoa desistir. A segunda pior é mandar "
 contexto. Esta skill monta a mensagem que resolve na primeira troca.
 
 ## Quando usar
-- O **Claudinn impediu** algo que a pessoa precisa fazer.
+- Um **comando foi recusado ou bloqueado** (algo que a pessoa precisa fazer).
 - Deu **erro** que você não resolve (conector Microsoft desligado, arquivo que não abre,
   login expirado).
 - A tarefa precisa de algo **fora do que você pode**: apagar, instalar, mexer em configuração,
@@ -25,7 +25,7 @@ O que eu estava tentando fazer:
 {uma frase, nas palavras da pessoa}
 
 O que aconteceu:
-{a mensagem exata que apareceu, copiada entre aspas — ex.: "O Claudinn impediu este comando: ..."}
+{a mensagem exata que apareceu, copiada entre aspas — ex.: "Este comando foi recusado: ..."}
 
 Onde:
 Agente {nome da pasta} — {data e hora}
@@ -49,5 +49,5 @@ Diga o que dá para fazer agora sem aquilo, se houver ("enquanto isso, posso te 
 para você apagar no Explorador").
 
 ## Nunca
-- Nunca tente contornar o que o Claudinn impediu enquanto a ajuda não chega.
+- Nunca tente contornar um comando recusado enquanto a ajuda não chega.
 - Nunca diga que "é um erro bobo" ou que a culpa é da pessoa.

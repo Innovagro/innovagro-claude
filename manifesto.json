@@ -2,7 +2,7 @@
   "manifesto": "innovagro-claude",
   "descricao": "Skills, ferramentas e agentes que o Claudinn instala. O atualizador compara este manifesto (do repo) com o instalado e traz so o que mudou. Do agente, atualiza SO os arquivos em 'gerenciado' (casa/ e skills/) — nunca o CLAUDE.md, que e da pessoa.",
   "raw_base": "https://raw.githubusercontent.com/Innovagro/innovagro-claude/main",
-  "versao": "2026-09-12.2",
+  "versao": "2026-09-12.3",
   "gerado_em": "2026-09-12",
   "skills": [
     {
@@ -177,7 +177,7 @@
     {
       "nome": "pedir-ajuda",
       "arquivo": "skills/pedir-ajuda/SKILL.md",
-      "descricao": "Prepara um pedido de ajuda claro para o assessor/TI quando algo trava — o Claudinn impediu, deu erro, o conector não liga, a tarefa precisa de algo que você não pode fazer. Use para \"não funcionou\", \"deu erro\", \"travou\", \"pede ajuda\", \"chama o suporte\", \"fala com o TI\", e sempre que o Claudinn impedir algo que a pessoa precisa.",
+      "descricao": "Prepara um pedido de ajuda claro para o assessor/TI quando algo trava — um comando foi recusado ou bloqueado, deu erro, o conector não liga, a tarefa precisa de algo que você não pode fazer. Use para \"não funcionou\", \"deu erro\", \"travou\", \"pede ajuda\", \"chama o suporte\", \"fala com o TI\", e sempre que um comando for recusado.",
       "arquivos": [
         {
           "caminho": "skills/pedir-ajuda/SKILL.md",

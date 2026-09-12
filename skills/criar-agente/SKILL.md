@@ -43,7 +43,7 @@ e pare.
 ## Fechar
 > "Pronto, o agente **Propostas** está criado. Já aparece no teu painel, dá dois cliques."
 
-Se o **Claudinn impedir**: não tente de outro jeito. Mostre o texto do CLAUDE.md e use a skill
+Se um **comando for recusado**: não tente de outro jeito. Mostre o texto do CLAUDE.md e use a skill
 `pedir-ajuda`.
 
 ## Nunca

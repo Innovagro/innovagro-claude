@@ -31,8 +31,8 @@ unidade diferente (kg × t).
   - Leia os CSV exportados no passo 1 (ou o `.xlsx` direto com pandas).
   - Grave resultados **só como arquivos novos** em `...\codespace\<agente>\planilhas\`.
   - O programa nunca apaga, move ou renomeia arquivo, nunca abre outro programa e nunca grava
-    fora da pasta de trabalho — o Claudinn impede, e está certo. Se aparecer "O Claudinn impediu",
-    não tente de outro jeito: explique e siga sem aquilo.
+    fora da pasta de trabalho. Se um comando for recusado, não tente de outro jeito: explique e
+    siga sem aquilo.
 - Todo número que vai para decisão passa pela skill `conferir`.
 
 ## 4. Entregar

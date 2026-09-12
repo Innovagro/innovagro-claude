@@ -41,7 +41,8 @@ instalador, nunca aqui.
 ## Como isto chega no computador
 
 Você **não precisa** clonar nem instalar nada à mão: o **Claudinn** (o instalador) faz tudo — põe o
-Claude, o Git, o Python e estas skills no lugar certo, e liga a trava de segurança da casa.
+Claude, o Git, o Python e estas skills no lugar certo, e configura a proteção nativa do Claude Code
+(que recusa apagar/destruir).
 
 Este repositório existe para **acompanhar as melhorias** e para quem quiser propor uma
 (`enviar-melhoria`). Baixar as novidades: skill `atualizar-projeto`.

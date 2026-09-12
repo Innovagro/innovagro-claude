@@ -52,5 +52,5 @@ Só agora pergunte **por quê**.
 
 ## Nunca
 - Nunca "conserte" apagando o dado ou o log que mostra o erro.
-- Nunca desligue a trava de segurança para o erro parecer resolvido.
+- Nunca desligue uma proteção (nem o bloqueio nativo) para o erro parecer resolvido.
 - Nunca use bash; aqui é PowerShell.

@@ -31,9 +31,9 @@ schtasks /create /tn "Claudinn\resumo-diario" `
   /sc daily /st 08:00
 ```
 - **`-p`** (roda e termina) e **`--permission-mode dontAsk`** são obrigatórios.
-- **Nunca** `--bare` (desliga a cerca — o Claudinn bloqueia).
-- O Claudinn **só** deixa criar tarefa nessa forma. Se você tentar agendar um script, outro programa,
-  ou sem essas condições, ele bloqueia — e está certo.
+- **Nunca** `--bare` (desliga a proteção: hooks, MCP, skills).
+- Crie tarefa **só** nessa forma. Não agende um script, outro programa, ou o Claude sem essas
+  condições — uma tarefa agendada roda fora da sua sessão.
 
 ## 4. Confirme
 > "Pronto: todo dia às 8h eu preparo o resumo e deixo em `saida\`. Você abre, confere e, se quiser
