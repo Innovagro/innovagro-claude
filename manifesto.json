@@ -1,7 +1,8 @@
 {
   "manifesto": "innovagro-claude",
-  "descricao": "Skills e ferramentas da casa que o Claudinn instala. O atualizador compara este manifesto (do repo) com o instalado e traz o que mudou (sha por arquivo).",
-  "versao": "2026-09-12.1",
+  "descricao": "Skills, ferramentas e agentes que o Claudinn instala. O atualizador compara este manifesto (do repo) com o instalado e traz so o que mudou. Do agente, atualiza SO os arquivos em 'gerenciado' (casa/ e skills/) — nunca o CLAUDE.md, que e da pessoa.",
+  "raw_base": "https://raw.githubusercontent.com/Innovagro/innovagro-claude/main",
+  "versao": "2026-09-12.2",
   "gerado_em": "2026-09-12",
   "skills": [
     {
@@ -34,6 +35,17 @@
         {
           "caminho": "skills/baixar-projeto/SKILL.md",
           "sha": "sha256:d2f297ad8fefaec8e5a188c03035ba12056b8dc31cc11d4daa15674538278788"
+        }
+      ]
+    },
+    {
+      "nome": "brainstorming",
+      "arquivo": "skills/brainstorming/SKILL.md",
+      "descricao": "Ajuda a pensar uma ideia antes de sair fazendo — faz perguntas, abre alternativas, compara e converge. Use para \"me ajuda a pensar\", \"brainstorm\", \"ideias\", \"explorar\", \"alternativas\", \"como eu poderia\", \"não sei por onde\", \"tô em dúvida entre\".",
+      "arquivos": [
+        {
+          "caminho": "skills/brainstorming/SKILL.md",
+          "sha": "sha256:355ecabfdc32664984235c3607c52c769b2cdbb857ed75dc61807e416c67f245"
         }
       ]
     },
@@ -289,8 +301,200 @@
       "sha": "sha256:e89c1dbe1a6326c139fff87f7b8ef52a59207f7f10f276b3304f3bc743cd80e2"
     }
   ],
+  "agentes": [
+    {
+      "nome": "Automacao",
+      "claude_md": "agentes/Automacao/CLAUDE.md",
+      "gerenciado": [
+        {
+          "caminho": "agentes/Automacao/.claude/casa/REGRAS.md",
+          "sha": "sha256:183b45e84622375b74d5d414ffd714fb2bb93c2e704f7113bbc866a3112bb537"
+        },
+        {
+          "caminho": "agentes/Automacao/.claude/skills/agendar-tarefa/SKILL.md",
+          "sha": "sha256:051f0492cae55aaace9fd648cab26de1a90be9efa1a4ada4b490972d5f3a6f10"
+        },
+        {
+          "caminho": "agentes/Automacao/.claude/skills/minhas-tarefas/SKILL.md",
+          "sha": "sha256:a76e99a8b36338d7bcb691b04addc9c4da2947b4fd88e5ba50017a77f37fe753"
+        },
+        {
+          "caminho": "agentes/Automacao/.claude/skills/o-que-agendar/SKILL.md",
+          "sha": "sha256:625c4cde94678bc991277116b22f760fe386eda50ed7c05ebbf521e9121346e7"
+        }
+      ],
+      "skills": [
+        {
+          "nome": "agendar-tarefa",
+          "arquivo": "agentes/Automacao/.claude/skills/agendar-tarefa/SKILL.md",
+          "descricao": "Cria uma tarefa recorrente que roda sozinha na máquina (ex.: todo dia às 8h) usando o Agendador de Tarefas do Windows. Use para \"agenda\", \"todo dia às\", \"toda semana\", \"roda sozinho\", \"automatiza isso\", \"agendar tarefa\", \"rotina diária\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Automacao/.claude/skills/agendar-tarefa/SKILL.md",
+              "sha": "sha256:051f0492cae55aaace9fd648cab26de1a90be9efa1a4ada4b490972d5f3a6f10"
+            }
+          ]
+        },
+        {
+          "nome": "minhas-tarefas",
+          "arquivo": "agentes/Automacao/.claude/skills/minhas-tarefas/SKILL.md",
+          "descricao": "Mostra, pausa e remove as tarefas agendadas que este agente criou. Use para \"minhas tarefas\", \"o que está agendado\", \"quais rotinas eu tenho\", \"pausa a tarefa\", \"para de rodar\", \"remove o agendamento\", \"cancela a rotina\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Automacao/.claude/skills/minhas-tarefas/SKILL.md",
+              "sha": "sha256:a76e99a8b36338d7bcb691b04addc9c4da2947b4fd88e5ba50017a77f37fe753"
+            }
+          ]
+        },
+        {
+          "nome": "o-que-agendar",
+          "arquivo": "agentes/Automacao/.claude/skills/o-que-agendar/SKILL.md",
+          "descricao": "Ajuda a pessoa a decidir o que vale a pena rodar sozinho e o que não deve — e enquadra tudo na regra \"a automação prepara, você envia\". Use para \"o que dá pra automatizar\", \"o que vale agendar\", \"que rotinas fazer\", \"ideias de automação\", \"como uso isso\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Automacao/.claude/skills/o-que-agendar/SKILL.md",
+              "sha": "sha256:625c4cde94678bc991277116b22f760fe386eda50ed7c05ebbf521e9121346e7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Dev",
+      "claude_md": "agentes/Dev/CLAUDE.md",
+      "gerenciado": [
+        {
+          "caminho": "agentes/Dev/.claude/casa/REGRAS.md",
+          "sha": "sha256:b8781ceaa5c5f049eaacb4831a22b5e851d87b785069ecb2f95e7b5aa94a11b6"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
+          "sha": "sha256:f1fffcaf7cf15e96bef6e17bee22cb7a9c40b9498aa66f34c3cc24a4692e0421"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
+          "sha": "sha256:59c25b270f8ccc415e5a68056e15f435df5a01dd6c59bf00fad27b9ca8081754"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
+          "sha": "sha256:c7452df1c0d38b1227ca5f2c2f84954f4f808bbd36559a84b67900cc7952ee1e"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/criar-tela/SKILL.md",
+          "sha": "sha256:6a7c590169af0e3a54bfcb9a9fb3747a360b6f4f0c56f98d8d3838f014243c6f"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/depurar/SKILL.md",
+          "sha": "sha256:e61bd6eb2f86e418bb23e337000349260bbdcad3d1c25e60119e0d8522ffc68a"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/rodar-e-publicar/SKILL.md",
+          "sha": "sha256:3f189c0cd3995fa94c17278de30220b47909311c40123c1175138fb8cc2a6385"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/testar/SKILL.md",
+          "sha": "sha256:8dabb30cb4d64530d97cdb68d75fa7f95c7a8a8a14639371cff53c2c49ff9627"
+        },
+        {
+          "caminho": "agentes/Dev/.claude/skills/tratar-erros/SKILL.md",
+          "sha": "sha256:655f17c194888c7ac9b224148d9610c4cdad898b319166b904073a228efa4b06"
+        }
+      ],
+      "skills": [
+        {
+          "nome": "arquitetura",
+          "arquivo": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
+          "descricao": "A skill-mestra do desenvolvimento — decide o degrau (ferramenta pessoal / app local / produção), as camadas do código e para qual outra skill ir. Use para \"por onde começo\", \"como estruturo isso\", \"que arquitetura\", \"novo projeto\", \"novo app\", \"quero construir\", \"isso vira app?\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
+              "sha": "sha256:f1fffcaf7cf15e96bef6e17bee22cb7a9c40b9498aa66f34c3cc24a4692e0421"
+            }
+          ]
+        },
+        {
+          "nome": "banco-de-dados",
+          "arquivo": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
+          "descricao": "Como guardar dados no padrão da casa — SQLite local (degraus 1 e 2) com camada de dados isolada, colunas explícitas, idempotência e backup datado. Use para \"banco de dados\", \"guardar dados\", \"sqlite\", \"criar tabela\", \"salvar registro\", \"consulta\", \"backup do banco\", \"modelar os dados\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
+              "sha": "sha256:59c25b270f8ccc415e5a68056e15f435df5a01dd6c59bf00fad27b9ca8081754"
+            }
+          ]
+        },
+        {
+          "nome": "criar-api",
+          "arquivo": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
+          "descricao": "Cria um endpoint de API no padrão da casa — borda fina, validação na entrada, um serviço, resposta num envelope consistente. Use para \"criar api\", \"novo endpoint\", \"rota de\", \"route.ts\", \"criar endpoint\", \"expor um serviço\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
+              "sha": "sha256:c7452df1c0d38b1227ca5f2c2f84954f4f808bbd36559a84b67900cc7952ee1e"
+            }
+          ]
+        },
+        {
+          "nome": "criar-tela",
+          "arquivo": "agentes/Dev/.claude/skills/criar-tela/SKILL.md",
+          "descricao": "Arquitetura de projetos Next.js (App Router) no padrão da casa — organização de pastas, route groups (list)/(write)/[uuid], onde cada componente mora. Para quem desenvolve na Innovagro (IT). Use para \"estrutura next\", \"organizar o next\", \"onde ponho esse componente\", \"arquitetura do projeto\", \"route group\", \"novo projeto next\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/criar-tela/SKILL.md",
+              "sha": "sha256:6a7c590169af0e3a54bfcb9a9fb3747a360b6f4f0c56f98d8d3838f014243c6f"
+            }
+          ]
+        },
+        {
+          "nome": "depurar",
+          "arquivo": "agentes/Dev/.claude/skills/depurar/SKILL.md",
+          "descricao": "Achar a causa de um erro (não só o sintoma) num programa ou ferramenta, em quatro fases. Para quem desenvolve na Innovagro. Use para \"deu erro\", \"não funciona\", \"quebrou\", \"bug\", \"está falhando\", \"por que isso acontece\", \"debug\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/depurar/SKILL.md",
+              "sha": "sha256:e61bd6eb2f86e418bb23e337000349260bbdcad3d1c25e60119e0d8522ffc68a"
+            }
+          ]
+        },
+        {
+          "nome": "rodar-e-publicar",
+          "arquivo": "agentes/Dev/.claude/skills/rodar-e-publicar/SKILL.md",
+          "descricao": "Rodar o app na máquina (degraus 1 e 2) e, no degrau 3, publicar pela Vercel. Use para \"rodar o app\", \"abrir no navegador\", \"npm run dev\", \"build\", \"publicar\", \"deploy\", \"colocar no ar\", \"subir pra produção\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/rodar-e-publicar/SKILL.md",
+              "sha": "sha256:3f189c0cd3995fa94c17278de30220b47909311c40123c1175138fb8cc2a6385"
+            }
+          ]
+        },
+        {
+          "nome": "testar",
+          "arquivo": "agentes/Dev/.claude/skills/testar/SKILL.md",
+          "descricao": "O que \"pronto\" significa na casa — o app real rodou o fluxo real, com build/lint/tipos verdes. Escreve teste do que importa. Use para \"testar\", \"está pronto?\", \"escrever teste\", \"prova que funciona\", \"validar a feature\", \"terminei\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/testar/SKILL.md",
+              "sha": "sha256:8dabb30cb4d64530d97cdb68d75fa7f95c7a8a8a14639371cff53c2c49ff9627"
+            }
+          ]
+        },
+        {
+          "nome": "tratar-erros",
+          "arquivo": "agentes/Dev/.claude/skills/tratar-erros/SKILL.md",
+          "descricao": "Como lidar com erro e log no padrão da casa — erro estruturado, tradução num ponto só, sem vazar dado interno, log sem PII e sem console solto. Use para \"tratar erro\", \"lançar erro\", \"log\", \"logger\", \"validação\", \"try catch\", \"mensagem de erro\", \"console.log\".",
+          "arquivos": [
+            {
+              "caminho": "agentes/Dev/.claude/skills/tratar-erros/SKILL.md",
+              "sha": "sha256:655f17c194888c7ac9b224148d9610c4cdad898b319166b904073a228efa4b06"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "contagem": {
-    "skills": 23,
-    "ferramentas": 5
+    "skills": 24,
+    "ferramentas": 5,
+    "agentes": 2
   }
 }
