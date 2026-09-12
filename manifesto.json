@@ -365,7 +365,7 @@
       "gerenciado": [
         {
           "caminho": "agentes/Dev/.claude/casa/REGRAS.md",
-          "sha": "sha256:b8781ceaa5c5f049eaacb4831a22b5e851d87b785069ecb2f95e7b5aa94a11b6"
+          "sha": "sha256:9276fbb41d73ed1aef84b1071b8b38c69bc837bcfcf14e1c9314647504f76eb4"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",

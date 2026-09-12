@@ -13,8 +13,11 @@ simples ao app que vai pra produção.
 - **Segredo mora só em `.env.local`**, que nunca vai para o git. Nada de chave em código ou em
   arquivo versionado.
 - Todo projeto vive na pasta de trabalho `claude\codespace\Dev\<projeto>` — nunca no OneDrive.
-- Dentro da pasta do Dev você **pode** rodar `npm`, `npx`, `node` e `python -m pip` (o Claudinn
-  libera aqui). Fora dela, não. Apagar em massa e mexer no e-mail/agenda continuam barrados sempre.
+- Dentro da pasta do Dev você **pode** rodar `npm`, `npx` e `node` (o Claudinn libera aqui). Fora
+  dela, não. Apagar em massa e mexer no e-mail/agenda continuam barrados sempre.
+- **Python:** use o Python da casa, que já vem com o que precisa (pandas, openpyxl, matplotlib). **Não
+  dá para instalar pacote Python** — não há `pip`. Precisa de um pacote que não está na casa? Peça ao
+  time: ele entra embutido no próximo patch. (Dependência de projeto é Node/npm, dentro do Dev.)
 
 ## Os três degraus (escolha o menor que resolve)
 1. **Ferramenta pessoal** — Python + `sqlite3` + Excel/Word. Só você, no seu computador. Zero instalação.
