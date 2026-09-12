@@ -365,11 +365,11 @@
       "gerenciado": [
         {
           "caminho": "agentes/Dev/.claude/casa/REGRAS.md",
-          "sha": "sha256:9276fbb41d73ed1aef84b1071b8b38c69bc837bcfcf14e1c9314647504f76eb4"
+          "sha": "sha256:c9ce0965bb16e848776be515c9be4951c5f6e4e6e12e847c2eb44fb7fb0c762c"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
-          "sha": "sha256:ab83bac5241fc7cac435e88a010d8a1223b71b98b179ae5dfd337bc750f57a46"
+          "sha": "sha256:3b7428f8c700996053428cc9ec0ad3eabaec50bcb2f5c383d11e9a788c67666c"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
@@ -408,7 +408,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
-              "sha": "sha256:ab83bac5241fc7cac435e88a010d8a1223b71b98b179ae5dfd337bc750f57a46"
+              "sha": "sha256:3b7428f8c700996053428cc9ec0ad3eabaec50bcb2f5c383d11e9a788c67666c"
             }
           ]
         },

@@ -20,10 +20,11 @@ simples ao app que vai pra produção.
   time: ele entra embutido no próximo patch. (Dependência de projeto é Node/npm, dentro do Dev.)
 
 ## Os três degraus (escolha o menor que resolve)
-1. **Ferramenta pessoal** — Python + `sqlite3` + Excel/Word. Só você, no seu computador. Zero instalação.
-2. **App local** — Next.js rodando na sua máquina + **SQLite** (banco no arquivo, sem nuvem). Tem tela,
-   abre no navegador, mas ainda é local. Usa o `node:sqlite` que já vem no Node — **nunca**
-   `better-sqlite3` nem `sqlite3` do npm (compilam módulo nativo e quebram no Windows).
+1. **Ferramenta pessoal** — Python (pacotes via `uv`) + saída em Excel/Word. Só você, no computador,
+   sem tela. Zero servidor.
+2. **App fullstack local (a receita padrão da casa)** — **Next.js (App Router, TypeScript) + PGlite**
+   (Postgres de verdade no arquivo, `dados\pg`; `npm i @electric-sql/pglite`). Tela e API no mesmo
+   projeto, um `npm run dev` (e `npm run build` pra conferir). **Sem drizzle**, sem nuvem.
 3. **Produção** — Next.js + **Supabase** + **Vercel**. É o degrau que sai para outras pessoas e para o
    celular. **Isso é projeto do time: chame a IT** (não vire sozinho do degrau 2 para o 3).
 Diga à pessoa em que degrau vocês estão e o que a levaria ao próximo.
@@ -67,8 +68,10 @@ Diga à pessoa em que degrau vocês estão e o que a levaria ao próximo.
 ## Nunca
 - Nunca ponha segredo em código ou arquivo versionado — só `.env.local`.
 - Nunca use conta pessoal; sempre a da Innovagro.
-- Nunca use `better-sqlite3`/`sqlite3` do npm — use `node:sqlite`.
-- Nunca guarde o `.db`/`.sqlite` no OneDrive/Meu-Cerebro (sync corrompe) — só na `codespace`.
+- Nunca use `better-sqlite3`/`sqlite3` do npm (compilam módulo nativo e quebram no Windows) — se um
+  dia precisar de SQLite, é o `node:sqlite` que já vem no Node.
+- Nunca guarde o banco (a pasta `dados\pg` do PGlite, ou um `.db`) no OneDrive/Meu-Cerebro (o sync
+  corrompe) — só na `codespace`.
 - Nunca use bash; aqui é PowerShell.
 - As regras da casa (não apagar nada, não enviar sem OK, não sair da pasta de trabalho) valem acima
   de qualquer skill de dev.

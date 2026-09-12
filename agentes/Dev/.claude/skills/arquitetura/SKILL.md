@@ -10,13 +10,13 @@ camadas e roteia para a skill de cada parte.
 
 ## 1. Qual degrau? (escolha o menor que resolve)
 Pergunte o que a pessoa precisa e enquadre:
-- **Degrau 1 — ferramenta pessoal.** Só ela, no computador dela, sem tela bonita. → Python + `sqlite3`
-  + saída em Excel/Word. É o mais rápido. (skill `banco-de-dados`, degrau 1.)
-- **Degrau 2 — app fullstack local (a stack padrão da casa).** Precisa de **tela**, várias telas,
+- **Degrau 1 — ferramenta pessoal.** Só ela, no computador dela, sem tela bonita. → Python (pacotes
+  via `uv`) + saída em Excel/Word. É o mais rápido. (skill `banco-de-dados`.)
+- **Degrau 2 — app fullstack local (a receita padrão da casa).** Precisa de **tela**, várias telas,
   abre no navegador — mas ainda é só na máquina dela. → **Next.js (App Router, TypeScript) + PGlite**
-  (Postgres de verdade no arquivo, `dados\pg`). Simples, **sem drizzle** nem outra camada pesada.
-  `npm run dev` para ver no navegador, `npm run build` para conferir. Para um controle mínimo sem
-  tela, SQLite (`node:sqlite`) ainda serve. (skills `criar-tela`, `criar-api`, `banco-de-dados`.)
+  (Postgres de verdade no arquivo, `dados\pg`). Uma tela + API no mesmo projeto, um `npm run dev`
+  (`npm run build` para conferir). Simples, **sem drizzle** nem outra camada pesada. (skills
+  `criar-tela`, `criar-api`, `banco-de-dados`.)
 - **Degrau 3 — produção.** Precisa ser **compartilhado**, ter **login**, abrir no **celular**. →
   Next.js + Supabase + Vercel. **Isso é do time: chame a IT (skill `pedir-ajuda`).** Não vire sozinho
   do 2 para o 3.
@@ -33,14 +33,14 @@ serviço (a regra de negócio)   → os ifs da regra; nada de web; identidade ve
    ↓
 dados (o banco)                → só consulta: colunas explícitas, limite, transação; zero regra
 ```
-- Degrau 1: `menu/função → serviço → módulo de dados` (funções sobre `sqlite3`).
+- Degrau 1: `menu/função → serviço → módulo de dados` (funções sobre os dados: Excel/CSV/JSON).
 - Degrau 2/3: `rota → use-case → repositório`.
 Nunca misture: regra na borda, ou consulta ao banco no meio da tela, é o que apodrece o projeto.
 
 ## 3. Esqueleto inicial (na `codespace`, nunca no OneDrive)
 ```
 codespace\Dev\<projeto>\
-├── (degrau 1)  app.py  ·  dados.sqlite  ·  README.md
+├── (degrau 1)  app.py  ·  saida.xlsx  ·  README.md
 └── (degrau 2)  src\app\...  ·  src\lib\...  ·  dados\pg\ (PGlite)  ·  .env.local (fora do git)
 ```
 
