@@ -27,9 +27,10 @@ Supabase (Postgres na nuvem), mas os princípios são os mesmos.
 - **Postgres local — use PGlite (é o caminho hoje).** Pediu **Postgres** num app local? Use
   **PGlite**: Postgres de verdade compilado pra WASM, roda **dentro do Node**, sem instalar servidor,
   sem Docker, sem admin. `npm i @electric-sql/pglite`; os dados ficam em `<projeto>\dados\pg`
-  (uma pasta na `codespace`), **NUNCA** no OneDrive/Meu-Cerebro. Front em **Vite + React (TypeScript)**;
-  backend em **Node + `tsx`**. **Nunca** instale PostgreSQL, Docker ou serviço do Windows — Postgres
-  instalado (serviço) ou Supabase é o degrau 3 (chame o time).
+  (uma pasta na `codespace`), **NUNCA** no OneDrive/Meu-Cerebro. Na stack padrão da casa é **Next.js
+  (App Router, TypeScript)** — `npm run dev` para ver, `npm run build` para conferir; sem drizzle.
+  **Nunca** instale PostgreSQL, Docker ou serviço do Windows — Postgres instalado (serviço) ou
+  Supabase é o degrau 3 (chame o time).
   ```typescript
   import { PGlite } from '@electric-sql/pglite'
   const db = new PGlite('dados/pg')   // pasta do projeto; nunca no OneDrive

@@ -369,11 +369,11 @@
         },
         {
           "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
-          "sha": "sha256:f1fffcaf7cf15e96bef6e17bee22cb7a9c40b9498aa66f34c3cc24a4692e0421"
+          "sha": "sha256:ab83bac5241fc7cac435e88a010d8a1223b71b98b179ae5dfd337bc750f57a46"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-          "sha": "sha256:1f90960f0e288296d01065834b480c3da02e95cdd2512d872892ccc89512a563"
+          "sha": "sha256:1870c2e068f7ef84cfd81160a1506a12a81bbf09d0a59884d6ca5e1484e5271c"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
@@ -408,7 +408,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/arquitetura/SKILL.md",
-              "sha": "sha256:f1fffcaf7cf15e96bef6e17bee22cb7a9c40b9498aa66f34c3cc24a4692e0421"
+              "sha": "sha256:ab83bac5241fc7cac435e88a010d8a1223b71b98b179ae5dfd337bc750f57a46"
             }
           ]
         },
@@ -419,7 +419,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-              "sha": "sha256:1f90960f0e288296d01065834b480c3da02e95cdd2512d872892ccc89512a563"
+              "sha": "sha256:1870c2e068f7ef84cfd81160a1506a12a81bbf09d0a59884d6ca5e1484e5271c"
             }
           ]
         },

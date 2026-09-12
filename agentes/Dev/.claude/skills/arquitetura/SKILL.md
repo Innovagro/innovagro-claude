@@ -12,9 +12,11 @@ camadas e roteia para a skill de cada parte.
 Pergunte o que a pessoa precisa e enquadre:
 - **Degrau 1 — ferramenta pessoal.** Só ela, no computador dela, sem tela bonita. → Python + `sqlite3`
   + saída em Excel/Word. É o mais rápido. (skill `banco-de-dados`, degrau 1.)
-- **Degrau 2 — app local.** Precisa de **tela**, várias telas, abre no navegador — mas ainda é só na
-  máquina dela. → Next.js local + **SQLite** (`node:sqlite`). (skills `criar-tela`, `criar-api`,
-  `banco-de-dados` degrau 2.)
+- **Degrau 2 — app fullstack local (a stack padrão da casa).** Precisa de **tela**, várias telas,
+  abre no navegador — mas ainda é só na máquina dela. → **Next.js (App Router, TypeScript) + PGlite**
+  (Postgres de verdade no arquivo, `dados\pg`). Simples, **sem drizzle** nem outra camada pesada.
+  `npm run dev` para ver no navegador, `npm run build` para conferir. Para um controle mínimo sem
+  tela, SQLite (`node:sqlite`) ainda serve. (skills `criar-tela`, `criar-api`, `banco-de-dados`.)
 - **Degrau 3 — produção.** Precisa ser **compartilhado**, ter **login**, abrir no **celular**. →
   Next.js + Supabase + Vercel. **Isso é do time: chame a IT (skill `pedir-ajuda`).** Não vire sozinho
   do 2 para o 3.
@@ -39,7 +41,7 @@ Nunca misture: regra na borda, ou consulta ao banco no meio da tela, é o que ap
 ```
 codespace\Dev\<projeto>\
 ├── (degrau 1)  app.py  ·  dados.sqlite  ·  README.md
-└── (degrau 2)  src\app\...  ·  src\lib\...  ·  dados\app.db  ·  .env.local (fora do git)
+└── (degrau 2)  src\app\...  ·  src\lib\...  ·  dados\pg\ (PGlite)  ·  .env.local (fora do git)
 ```
 
 ## 4. Roteie
@@ -53,4 +55,6 @@ codespace\Dev\<projeto>\
 
 ## Regras
 - Windows/PowerShell, contas da Innovagro, segredo só em `.env.local`. (Estão em `casa\REGRAS.md`.)
+- **Python é só com `uv`** (o Python da casa não tem `pip`): baixe o `uv.exe` para
+  `%LOCALAPPDATA%\Programs\uv` e use `uv venv` + `uv pip install`.
 - Confirme o degrau com a pessoa **antes** de começar a codar. Mostrar o esqueleto e o plano primeiro.
