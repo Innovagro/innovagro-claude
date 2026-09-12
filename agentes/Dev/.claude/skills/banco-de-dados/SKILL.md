@@ -1,12 +1,13 @@
 ---
 name: banco-de-dados
-description: Como guardar dados no padrão da casa — SQLite local (degraus 1 e 2) com camada de dados isolada, colunas explícitas, idempotência e backup datado. Use para "banco de dados", "guardar dados", "sqlite", "criar tabela", "salvar registro", "consulta", "backup do banco", "modelar os dados".
+description: Como guardar dados no padrão da casa — SQLite local, ou Postgres local com PGlite (Postgres em WASM, sem instalar nada), camada de dados isolada, colunas explícitas, idempotência e backup datado. Use para "banco de dados", "guardar dados", "sqlite", "postgres", "pglite", "postgres com typescript", "criar tabela", "salvar registro", "consulta", "backup do banco", "modelar os dados".
 ---
 
 # Banco de dados
 
-Nos degraus 1 e 2 o banco é **SQLite** — um arquivo `.db` na pasta do projeto, sem nuvem, sem
-instalar servidor. No degrau 3 vira Supabase (Postgres), mas os princípios são os mesmos.
+No app local, o banco é **SQLite** (um arquivo `.db`) ou **Postgres via PGlite** (Postgres de
+verdade em WASM, também numa pasta do projeto) — sem nuvem, sem instalar servidor. No degrau 3 vira
+Supabase (Postgres na nuvem), mas os princípios são os mesmos.
 
 ## Onde o banco mora (regra dura)
 - O `.db`/`.sqlite` fica **sempre** em `codespace\Dev\<projeto>\dados\`.
@@ -20,9 +21,22 @@ instalar servidor. No degrau 3 vira Supabase (Postgres), mas os princípios são
 
 ## Qual ferramenta
 - **Degrau 1 (Python):** o `sqlite3` já vem no Python da casa. `import sqlite3` e pronto.
-- **Degrau 2 (Next.js local):** use o **`node:sqlite`** que já vem no Node
+- **Degrau 2 (app local com SQLite):** use o **`node:sqlite`** que já vem no Node
   (`const { DatabaseSync } = require('node:sqlite')`). **NUNCA** `better-sqlite3` nem `sqlite3` do
   npm — eles compilam módulo nativo e quebram no Windows sem as Build Tools.
+- **Postgres local — use PGlite (é o caminho hoje).** Pediu **Postgres** num app local? Use
+  **PGlite**: Postgres de verdade compilado pra WASM, roda **dentro do Node**, sem instalar servidor,
+  sem Docker, sem admin. `npm i @electric-sql/pglite`; os dados ficam em `<projeto>\dados\pg`
+  (uma pasta na `codespace`), **NUNCA** no OneDrive/Meu-Cerebro. Front em **Vite + React (TypeScript)**;
+  backend em **Node + `tsx`**. **Nunca** instale PostgreSQL, Docker ou serviço do Windows — Postgres
+  instalado (serviço) ou Supabase é o degrau 3 (chame o time).
+  ```typescript
+  import { PGlite } from '@electric-sql/pglite'
+  const db = new PGlite('dados/pg')   // pasta do projeto; nunca no OneDrive
+  await db.exec('CREATE TABLE IF NOT EXISTS clientes (id serial PRIMARY KEY, nome text)')
+  await db.query('INSERT INTO clientes (nome) VALUES ($1)', ['Ana'])
+  const { rows } = await db.query('SELECT * FROM clientes')
+  ```
 - **Conferir o banco na mão:** o `sqlite3.exe` da casa abre o arquivo (`.tables`, `.schema`, um
   `SELECT`) **sempre com `--safe`** — sem essa flag o CLI aceitaria `.shell`/`.system`, `ATTACH` e
   gravar em qualquer arquivo, e o Claudinn bloqueia. Com `--safe` a leitura funciona igual:
@@ -49,8 +63,9 @@ Quem fala com o banco só sabe consultar — nenhuma regra de negócio:
 - Para "apagar", prefira marcar `ativo = 0` (histórico é barato; perda não volta).
 
 ## Nunca
-- Nunca guarde o `.db` no OneDrive/Meu-Cerebro.
-- Nunca chame o `sqlite3.exe` sem `--safe` (fora o comando de backup datado).
+- Nunca guarde o banco (`.db` do SQLite ou a pasta `dados\pg` do PGlite) no OneDrive/Meu-Cerebro.
+- Nunca instale PostgreSQL, Docker ou serviço do Windows — Postgres local é **PGlite**.
+- Nunca use os comandos de host do `sqlite3` (`.shell`, `.system`, `.output`) — o Claudinn barra.
 - Nunca use `better-sqlite3`/`sqlite3` do npm.
 - Nunca ponha regra de negócio na camada de dados.
 - Nunca monte query com texto concatenado; use parâmetros.

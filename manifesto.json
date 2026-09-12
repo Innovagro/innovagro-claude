@@ -373,7 +373,7 @@
         },
         {
           "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-          "sha": "sha256:f192df837a7853071d6e3d2f5a853a4e93ecc1329f792b00c00eefccd13d10c2"
+          "sha": "sha256:1f90960f0e288296d01065834b480c3da02e95cdd2512d872892ccc89512a563"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
@@ -415,11 +415,11 @@
         {
           "nome": "banco-de-dados",
           "arquivo": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-          "descricao": "Como guardar dados no padrão da casa — SQLite local (degraus 1 e 2) com camada de dados isolada, colunas explícitas, idempotência e backup datado. Use para \"banco de dados\", \"guardar dados\", \"sqlite\", \"criar tabela\", \"salvar registro\", \"consulta\", \"backup do banco\", \"modelar os dados\".",
+          "descricao": "Como guardar dados no padrão da casa — SQLite local, ou Postgres local com PGlite (Postgres em WASM, sem instalar nada), camada de dados isolada, colunas explícitas, idempotência e backup datado. Use para \"banco de dados\", \"guardar dados\", \"sqlite\", \"postgres\", \"pglite\", \"postgres com typescript\", \"criar tabela\", \"salvar registro\", \"consulta\", \"backup do banco\", \"modelar os dados\".",
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-              "sha": "sha256:f192df837a7853071d6e3d2f5a853a4e93ecc1329f792b00c00eefccd13d10c2"
+              "sha": "sha256:1f90960f0e288296d01065834b480c3da02e95cdd2512d872892ccc89512a563"
             }
           ]
         },
