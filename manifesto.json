@@ -144,11 +144,11 @@
     {
       "nome": "email",
       "arquivo": "skills/email/SKILL.md",
-      "descricao": "Escrever, responder e encaminhar e-mail no Outlook, do jeito que a pessoa escreve. Use para \"escreve um e-mail\", \"responde esse e-mail\", \"responde o fulano\", \"encaminha pra\", \"manda um e-mail pra\", \"prepara uma resposta\", \"cobra por e-mail\". SEMPRE mostra o rascunho completo e só envia com o OK explícito.",
+      "descricao": "Escrever e responder e-mail no Outlook, do jeito que a pessoa escreve. Use para \"escreve um e-mail\", \"responde esse e-mail\", \"responde o fulano\", \"manda um e-mail pra\", \"prepara uma resposta\", \"cobra por e-mail\". SEMPRE mostra o rascunho completo no chat e só envia com o OK explícito.",
       "arquivos": [
         {
           "caminho": "skills/email/SKILL.md",
-          "sha": "sha256:8ee478307b116155024db1d68044623cf713f79987cae7febf73ae9fc191b8f2"
+          "sha": "sha256:a5a05ded94b6e373a00af1a16071a852a396cdaf4e2d60b198df4dbff3c8d44f"
         }
       ]
     },
@@ -373,7 +373,7 @@
         },
         {
           "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-          "sha": "sha256:59c25b270f8ccc415e5a68056e15f435df5a01dd6c59bf00fad27b9ca8081754"
+          "sha": "sha256:f192df837a7853071d6e3d2f5a853a4e93ecc1329f792b00c00eefccd13d10c2"
         },
         {
           "caminho": "agentes/Dev/.claude/skills/criar-api/SKILL.md",
@@ -419,7 +419,7 @@
           "arquivos": [
             {
               "caminho": "agentes/Dev/.claude/skills/banco-de-dados/SKILL.md",
-              "sha": "sha256:59c25b270f8ccc415e5a68056e15f435df5a01dd6c59bf00fad27b9ca8081754"
+              "sha": "sha256:f192df837a7853071d6e3d2f5a853a4e93ecc1329f792b00c00eefccd13d10c2"
             }
           ]
         },

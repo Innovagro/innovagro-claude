@@ -1,6 +1,6 @@
 ---
 name: email
-description: Escrever, responder e encaminhar e-mail no Outlook, do jeito que a pessoa escreve. Use para "escreve um e-mail", "responde esse e-mail", "responde o fulano", "encaminha pra", "manda um e-mail pra", "prepara uma resposta", "cobra por e-mail". SEMPRE mostra o rascunho completo e só envia com o OK explícito.
+description: Escrever e responder e-mail no Outlook, do jeito que a pessoa escreve. Use para "escreve um e-mail", "responde esse e-mail", "responde o fulano", "manda um e-mail pra", "prepara uma resposta", "cobra por e-mail". SEMPRE mostra o rascunho completo no chat e só envia com o OK explícito.
 ---
 
 # E-mail
@@ -15,8 +15,9 @@ Esta skill tem duas partes:
 ## As regras (fixas)
 1. **Entenda o pedido.** Para quem, sobre o quê, o que precisa acontecer depois. Faltou algo
    essencial → pergunte, **uma coisa por vez**.
-2. **Resposta ou encaminhamento?** Ache o e-mail original primeiro (`list-mail-messages`, depois
-   `get-mail-message`). Mais de um parecido → mostre 2 ou 3 (de quem, assunto, data) e pergunte qual.
+2. **Resposta ou e-mail novo?** Se é resposta, ache o e-mail original primeiro (`list-mail-messages`,
+   depois `get-mail-message`). Mais de um parecido → mostre 2 ou 3 (de quem, assunto, data) e pergunte
+   qual. **Encaminhar não dá por aqui** — encaminhar é no Outlook (ver Cuidados).
 3. **Escreva o rascunho no chat**, sempre assim:
    ```
    Para: nome <email>
@@ -30,14 +31,17 @@ Esta skill tem duas partes:
 4. **Pergunte:** "Posso enviar assim, ou quer mudar algo?" Mudou → mostre o texto inteiro de novo.
 5. **Só envie com OK explícito:** "pode enviar", "envia", "manda", "ok, pode mandar".
    Resposta vaga ("tá bom", "legal") → "Então posso enviar?"
-6. **Enviar:** crie o rascunho no Outlook (`create-reply-draft`, `create-reply-all-draft`,
-   `create-forward-draft` ou `create-draft-email`) e envie com `send-draft-message`.
-   Vai aparecer uma confirmação na tela — é a segunda trava, de propósito: "É só aprovar."
+6. **Enviar:** o rascunho que você já viu no chat é o que vai. E-mail novo → `send-mail`;
+   resposta → `reply-mail-message`; responder a todos → `reply-all-mail-message`.
+   Vai aparecer uma confirmação na tela na hora do envio — é a segunda trava, de propósito:
+   "É só aprovar."
 7. **Confirme:** "Enviado para {destinatário} às 14h32."
 
-Quer só o rascunho? "Deixei na pasta **Rascunhos** do seu Outlook — é só revisar e enviar."
+Quer só o rascunho, sem enviar? Ele já está aqui no chat — copie pro Outlook, ou me diga e eu envio
+quando você aprovar. (Não crio rascunho no seu Outlook — o texto fica aqui, à sua vista.)
 
-**Cuidados:** destinatário de fora da empresa → avise antes do OK. Anexo → só arquivo que a
+**Cuidados:** encaminhar um e-mail (ainda mais pra fora) → **isso é no Outlook**, não por aqui
+(o encaminhamento foi tirado de propósito). Destinatário de fora da empresa → avise antes do OK. Anexo → só arquivo que a
 pessoa indicou. Assunto sensível (preço, contrato, crédito, pagamento, jurídico) → "revise com
 calma antes de enviar". Vários e-mails → mostre todos; o OK vale só para os mostrados.
 

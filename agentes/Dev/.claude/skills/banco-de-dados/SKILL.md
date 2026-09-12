@@ -24,7 +24,11 @@ instalar servidor. No degrau 3 vira Supabase (Postgres), mas os princípios são
   (`const { DatabaseSync } = require('node:sqlite')`). **NUNCA** `better-sqlite3` nem `sqlite3` do
   npm — eles compilam módulo nativo e quebram no Windows sem as Build Tools.
 - **Conferir o banco na mão:** o `sqlite3.exe` da casa abre o arquivo (`.tables`, `.schema`, um
-  `SELECT`) sem alterar nada.
+  `SELECT`) **sempre com `--safe`** — sem essa flag o CLI aceitaria `.shell`/`.system`, `ATTACH` e
+  gravar em qualquer arquivo, e o Claudinn bloqueia. Com `--safe` a leitura funciona igual:
+  ```powershell
+  & "$env:LOCALAPPDATA\Programs\Claudinn\ferramentas\sqlite3.exe" --safe "dados\app.db" ".tables"
+  ```
 
 ## A camada de dados é "burra" (o princípio que mais importa)
 Quem fala com o banco só sabe consultar — nenhuma regra de negócio:
@@ -46,6 +50,7 @@ Quem fala com o banco só sabe consultar — nenhuma regra de negócio:
 
 ## Nunca
 - Nunca guarde o `.db` no OneDrive/Meu-Cerebro.
+- Nunca chame o `sqlite3.exe` sem `--safe` (fora o comando de backup datado).
 - Nunca use `better-sqlite3`/`sqlite3` do npm.
 - Nunca ponha regra de negócio na camada de dados.
 - Nunca monte query com texto concatenado; use parâmetros.
