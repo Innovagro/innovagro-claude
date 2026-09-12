@@ -1,0 +1,296 @@
+{
+  "manifesto": "innovagro-claude",
+  "descricao": "Skills e ferramentas da casa que o Claudinn instala. O atualizador compara este manifesto (do repo) com o instalado e traz o que mudou (sha por arquivo).",
+  "versao": "2026-09-12.1",
+  "gerado_em": "2026-09-12",
+  "skills": [
+    {
+      "nome": "ata-de-reuniao",
+      "arquivo": "skills/ata-de-reuniao/SKILL.md",
+      "descricao": "Transforma a transcrição de uma reunião do Teams (ou anotações) em ata no Word com o logo e as cores da Innovagro — decisões, responsáveis e prazos. Use para \"faz a ata\", \"ata da reunião\", \"resume a reunião\", \"o que ficou decidido\", \"ata da semanal\", \"tenho a transcrição\", \"pega a transcrição do Teams\".",
+      "arquivos": [
+        {
+          "caminho": "skills/ata-de-reuniao/SKILL.md",
+          "sha": "sha256:a61b70d94397f06c4c5ea92400bd03b98146400554ca8db580008481e6d0868b"
+        }
+      ]
+    },
+    {
+      "nome": "atualizar-projeto",
+      "arquivo": "skills/atualizar-projeto/SKILL.md",
+      "descricao": "Traz as novidades de um projeto que já foi baixado do GitHub. Use para \"atualiza o projeto\", \"baixa as novidades\", \"puxa a versão nova\", \"tem coisa nova no projeto?\", \"pull\".",
+      "arquivos": [
+        {
+          "caminho": "skills/atualizar-projeto/SKILL.md",
+          "sha": "sha256:c21f56486daf05f772911b931ffa94f8ba93d2daf96d6dece2cb03698a17651d"
+        }
+      ]
+    },
+    {
+      "nome": "baixar-projeto",
+      "arquivo": "skills/baixar-projeto/SKILL.md",
+      "descricao": "Baixa um projeto público do GitHub para a pasta de trabalho. Use para \"baixa o projeto\", \"baixa esse link\", \"clona\", \"pega o projeto do GitHub\", \"traz esse repositório pra cá\".",
+      "arquivos": [
+        {
+          "caminho": "skills/baixar-projeto/SKILL.md",
+          "sha": "sha256:d2f297ad8fefaec8e5a188c03035ba12056b8dc31cc11d4daa15674538278788"
+        }
+      ]
+    },
+    {
+      "nome": "caixa-de-entrada",
+      "arquivo": "skills/caixa-de-entrada/SKILL.md",
+      "descricao": "Lê a caixa de entrada do Outlook — resume o que chegou, acha e-mail, mostra o que precisa de resposta. Só leitura. Use para \"o que chegou de importante hoje?\", \"resume meus e-mails\", \"o que eu preciso responder\", \"acha o e-mail do fulano\", \"tem e-mail sobre\", \"bom dia, o que tem pra mim\", \"minha agenda de hoje\".",
+      "arquivos": [
+        {
+          "caminho": "skills/caixa-de-entrada/SKILL.md",
+          "sha": "sha256:ebf6d5a2eb99c07ed5984f6dbc621334f51772108a30fb8de1262a2cbe2aadc2"
+        }
+      ]
+    },
+    {
+      "nome": "conferir",
+      "arquivo": "skills/conferir/SKILL.md",
+      "descricao": "Confere número, conta, data e fato antes de entregar — refaz a conta de outro jeito e mostra de onde veio cada valor. Use antes de entregar qualquer total, relatório ou comparação, e quando a pessoa pedir \"confere\", \"tem certeza?\", \"bate?\", \"revisa os números\", \"isso está certo?\".",
+      "arquivos": [
+        {
+          "caminho": "skills/conferir/SKILL.md",
+          "sha": "sha256:64504f1cb6593d805a5a6c1c77052ea78efe4e7f7c7f70e25314b6e5f9c9ca9c"
+        }
+      ]
+    },
+    {
+      "nome": "conhecer-voce",
+      "arquivo": "skills/conhecer-voce/SKILL.md",
+      "descricao": "Entrevista curta para o Diretor conhecer a pessoa e preencher a seção QUEM SOU. Use SOZINHA na primeira conversa quando o CLAUDE.md global estiver marcado \"QUEM-SOU:rascunho\" E a pasta atual for a do Diretor (codespace\\Diretor) — em qualquer outra pasta, nunca. Use também quando a pessoa pedir \"me conhece\", \"atualiza quem eu sou\", \"refaz minha apresentação\", \"você não me conhece\".",
+      "arquivos": [
+        {
+          "caminho": "skills/conhecer-voce/SKILL.md",
+          "sha": "sha256:ed66201b1e198fe5cfb05bd8b3283d62d5797caf92a8df3dcf79c5daa9abd8e0"
+        }
+      ]
+    },
+    {
+      "nome": "consultar-documentos",
+      "arquivo": "skills/consultar-documentos/SKILL.md",
+      "descricao": "Procura e lê documentos (Word, PDF, texto, notas) numa pasta e responde citando de onde tirou. Use para \"o que diz o contrato\", \"procura nos documentos\", \"acha onde fala de\", \"o que a gente combinou com\", \"lê esse arquivo\", \"resume esse documento\", \"tem alguma coisa sobre\".",
+      "arquivos": [
+        {
+          "caminho": "skills/consultar-documentos/SKILL.md",
+          "sha": "sha256:1a444ce3777e5d55577875a46ca5a04a556130e11be671ba3d07fc7f7eac5568"
+        }
+      ]
+    },
+    {
+      "nome": "criar-agente",
+      "arquivo": "skills/criar-agente/SKILL.md",
+      "descricao": "Cria um agente novo (uma pasta nova no painel, com as instruções dele). SÓ O DIRETOR usa. Use para \"cria um agente\", \"quero um agente pra\", \"monta um assistente de\", \"novo agente\", \"cria uma pasta pra cuidar de\".",
+      "arquivos": [
+        {
+          "caminho": "skills/criar-agente/SKILL.md",
+          "sha": "sha256:fb6095d2b35df442c9e7651e9163f27e8ef9411d305051d39d1144cd6f28bebb"
+        },
+        {
+          "caminho": "skills/criar-agente/modelo-agente.md",
+          "sha": "sha256:bc314dc9f914ee2315349313d8e9f9a18c7bd33888541b236aa6100f40b26184"
+        }
+      ]
+    },
+    {
+      "nome": "criar-documento",
+      "arquivo": "skills/criar-documento/SKILL.md",
+      "descricao": "Cria um documento Word (.docx) no padrão Innovagro — logo no cabeçalho, títulos marinho e verde, tabelas, página X de Y. Use para \"cria um documento\", \"faz um Word\", \"monta um relatório em Word\", \"gera o docx\", \"escreve um comunicado\", \"passa isso pra Word\".",
+      "arquivos": [
+        {
+          "caminho": "skills/criar-documento/SKILL.md",
+          "sha": "sha256:d9a4896aa896ecc86756b33c15f503048c6c16c002887e699f1ea57e34824831"
+        }
+      ]
+    },
+    {
+      "nome": "criar-excel",
+      "arquivo": "skills/criar-excel/SKILL.md",
+      "descricao": "Cria uma planilha Excel (.xlsx) de verdade, já formatada — cabeçalho, filtro, R$, datas e total. Use para \"cria uma planilha\", \"monta um Excel\", \"passa isso pra Excel\", \"gera a planilha\", \"exporta pra Excel\", \"quero em xlsx\".",
+      "arquivos": [
+        {
+          "caminho": "skills/criar-excel/SKILL.md",
+          "sha": "sha256:129eddd8c0fb24eb2eec00cbc62e80ad6fd650e000b86368d200bd6e2ec93bca"
+        }
+      ]
+    },
+    {
+      "nome": "criar-skill",
+      "arquivo": "skills/criar-skill/SKILL.md",
+      "descricao": "Ensina um agente a fazer uma tarefa sempre do mesmo jeito, criando uma skill nova para ele. Use para \"cria uma skill\", \"quero que você sempre faça assim\", \"salva esse jeito de fazer\", \"ensina o agente a\", \"toda vez que eu pedir X faz Y\", \"transforma isso num padrão\".",
+      "arquivos": [
+        {
+          "caminho": "skills/criar-skill/SKILL.md",
+          "sha": "sha256:47e005df28d14723aaebc5363cc88d2f1f8a1f56cb172baebbda90e49fb890cc"
+        }
+      ]
+    },
+    {
+      "nome": "email",
+      "arquivo": "skills/email/SKILL.md",
+      "descricao": "Escrever, responder e encaminhar e-mail no Outlook, do jeito que a pessoa escreve. Use para \"escreve um e-mail\", \"responde esse e-mail\", \"responde o fulano\", \"encaminha pra\", \"manda um e-mail pra\", \"prepara uma resposta\", \"cobra por e-mail\". SEMPRE mostra o rascunho completo e só envia com o OK explícito.",
+      "arquivos": [
+        {
+          "caminho": "skills/email/SKILL.md",
+          "sha": "sha256:8ee478307b116155024db1d68044623cf713f79987cae7febf73ae9fc191b8f2"
+        }
+      ]
+    },
+    {
+      "nome": "enviar-melhoria",
+      "arquivo": "skills/enviar-melhoria/SKILL.md",
+      "descricao": "Envia uma melhoria feita num projeto de volta para o GitHub, para o responsável revisar. Precisa de conta no GitHub com acesso. Use para \"envia a melhoria\", \"manda pro GitHub\", \"sobe o que eu fiz\", \"push\", \"abre um pedido de mudança\".",
+      "arquivos": [
+        {
+          "caminho": "skills/enviar-melhoria/SKILL.md",
+          "sha": "sha256:452e7e4ed44caac3ce8088a484883f49ed79b63abbebb159372c5027fb427729"
+        }
+      ]
+    },
+    {
+      "nome": "marcar-reuniao",
+      "arquivo": "skills/marcar-reuniao/SKILL.md",
+      "descricao": "Acha horário livre e prepara o convite de reunião no Outlook/Teams. Use para \"marca uma reunião\", \"agenda com fulano\", \"acha um horário\", \"quando o fulano está livre\", \"remarca a reunião\", \"cria um convite\". Sempre mostra o convite e só envia com OK.",
+      "arquivos": [
+        {
+          "caminho": "skills/marcar-reuniao/SKILL.md",
+          "sha": "sha256:148fa659304b7ca4661bf20e1b26a9e02fb5749f905a05689d0a41c1fae721e6"
+        }
+      ]
+    },
+    {
+      "nome": "pedir-ajuda",
+      "arquivo": "skills/pedir-ajuda/SKILL.md",
+      "descricao": "Prepara um pedido de ajuda claro para o assessor/TI quando algo trava — o Claudinn impediu, deu erro, o conector não liga, a tarefa precisa de algo que você não pode fazer. Use para \"não funcionou\", \"deu erro\", \"travou\", \"pede ajuda\", \"chama o suporte\", \"fala com o TI\", e sempre que o Claudinn impedir algo que a pessoa precisa.",
+      "arquivos": [
+        {
+          "caminho": "skills/pedir-ajuda/SKILL.md",
+          "sha": "sha256:1e45aca3c89e8589b4bc4ea87540e8baaaf4e803ce2ddaf89533d2bce243119a"
+        }
+      ]
+    },
+    {
+      "nome": "planejar",
+      "arquivo": "skills/planejar/SKILL.md",
+      "descricao": "Quebra um pedido grande ou vago em passos pequenos, combina com a pessoa e executa um de cada vez. Use para \"me ajuda a organizar\", \"por onde eu começo\", \"tenho que fazer X até sexta\", \"é muita coisa\", \"planeja\", \"faz um plano\", ou quando o pedido tiver várias partes.",
+      "arquivos": [
+        {
+          "caminho": "skills/planejar/SKILL.md",
+          "sha": "sha256:25a59140331ea90cbce2c3a4b0b0ee413161ad04ff598cd5254fc193a2f7f7ef"
+        }
+      ]
+    },
+    {
+      "nome": "planilha",
+      "arquivo": "skills/planilha/SKILL.md",
+      "descricao": "Lê e analisa planilhas Excel (.xlsx) e CSV — somar, comparar, cruzar, agrupar, conferir, achar diferença, fazer gráfico. Use para \"analisa essa planilha\", \"soma\", \"total\", \"compara as duas planilhas\", \"confere os valores\", \"quantos\", \"agrupa por\", \"faz um gráfico\", \"abre o Excel\".",
+      "arquivos": [
+        {
+          "caminho": "skills/planilha/SKILL.md",
+          "sha": "sha256:ab6d862c67fe5d1ef6bebc6b83a2cfbdca1ce9eff4cac0ad1485ea3cf0fd1dda"
+        }
+      ]
+    },
+    {
+      "nome": "relatorio-pdf",
+      "arquivo": "skills/relatorio-pdf/SKILL.md",
+      "descricao": "Gera um relatório em PDF com o logo e as cores da Innovagro, pronto para mandar. Use para \"gera um PDF\", \"manda em PDF\", \"faz um relatório em PDF\", \"exporta pra PDF\", \"quero o PDF\", \"me manda em PDF também\".",
+      "arquivos": [
+        {
+          "caminho": "skills/relatorio-pdf/SKILL.md",
+          "sha": "sha256:2ac072a288254e180a7c0ff408f7220a7817cc4818db15d710f4cf03a9696adb"
+        }
+      ]
+    },
+    {
+      "nome": "salvar-versao",
+      "arquivo": "skills/salvar-versao/SKILL.md",
+      "descricao": "Salva uma \"foto\" de como os arquivos estão agora, com uma frase que a pessoa entende, para poder voltar depois. Não precisa de conta nem de internet. Use para \"salva uma versão\", \"guarda como está\", \"marca esse ponto\", \"antes de eu mexer, salva\", \"commit\".",
+      "arquivos": [
+        {
+          "caminho": "skills/salvar-versao/SKILL.md",
+          "sha": "sha256:d090f6f45e0790a4257f4ecf5a24ed9bfa50c6cce99c9719ef81d0bbdace9d3c"
+        }
+      ]
+    },
+    {
+      "nome": "teams",
+      "arquivo": "skills/teams/SKILL.md",
+      "descricao": "Lê conversas e canais do Microsoft Teams e prepara mensagens para enviar — sempre com o OK da pessoa. Use para \"o que falaram no Teams\", \"resume o canal\", \"o que o fulano me mandou no Teams\", \"manda no Teams pro\", \"responde no chat\", \"avisa o grupo\", \"posta no canal\".",
+      "arquivos": [
+        {
+          "caminho": "skills/teams/SKILL.md",
+          "sha": "sha256:a7daa3c80acd1ec5b8513a657deb9d43db5ef7efa4ca0e9ff43ae8819520ddbd"
+        }
+      ]
+    },
+    {
+      "nome": "trabalho-em-lote",
+      "arquivo": "skills/trabalho-em-lote/SKILL.md",
+      "descricao": "Faz a mesma tarefa em muitos itens parecidos — vários contratos, notas, e-mails ou arquivos — e junta tudo numa tabela. Use para \"faz isso pra todos\", \"em todos os arquivos da pasta\", \"tira de cada contrato\", \"monta uma tabela com todos\", \"são 50 contratos\", \"de cada nota\".",
+      "arquivos": [
+        {
+          "caminho": "skills/trabalho-em-lote/SKILL.md",
+          "sha": "sha256:449b1f9ca4c6a4e0dfb8017817d3e2c4e0f5c80ad839673ba565eb2355ca6566"
+        }
+      ]
+    },
+    {
+      "nome": "ver-historico",
+      "arquivo": "skills/ver-historico/SKILL.md",
+      "descricao": "Mostra as versões salvas de uma pasta ou arquivo, em português, com dia e hora. Use para \"mostra o histórico\", \"quais versões eu tenho\", \"o que mudou\", \"quando eu salvei\", \"log\".",
+      "arquivos": [
+        {
+          "caminho": "skills/ver-historico/SKILL.md",
+          "sha": "sha256:2a9467384b6f0d1a4c7359f59a47c402a4c4cafe1207ec9383c7d7667e9f96a6"
+        }
+      ]
+    },
+    {
+      "nome": "voltar-versao",
+      "arquivo": "skills/voltar-versao/SKILL.md",
+      "descricao": "Volta um arquivo ou uma pasta para como estava numa versão salva — sem perder nada. Use para \"volta pra como tava ontem\", \"desfaz\", \"quero a versão antiga\", \"estraguei o arquivo\", \"recupera como estava\", \"volta a versão\".",
+      "arquivos": [
+        {
+          "caminho": "skills/voltar-versao/SKILL.md",
+          "sha": "sha256:0448bffa89d4c70e2786d37068212f3db33190b755b585b192888a1593ac93bd"
+        }
+      ]
+    }
+  ],
+  "ferramentas": [
+    {
+      "nome": "criar-documento",
+      "arquivo": "ferramentas/criar-documento.mjs",
+      "sha": "sha256:4ae0c98c0ef4839e4f6eaef8770d599d77b570d0ad457192a65c475907205579"
+    },
+    {
+      "nome": "criar-excel",
+      "arquivo": "ferramentas/criar-excel.mjs",
+      "sha": "sha256:a71ea44682436eab508259627311b7ed7bf1be0b99eb082144354b3cfcc9ccb0"
+    },
+    {
+      "nome": "gerar-pdf",
+      "arquivo": "ferramentas/gerar-pdf.mjs",
+      "sha": "sha256:88a747b4acd5e8ca26e25fa52a258c56de7b39ec6df71fcdaa98487e6a3d5f3d"
+    },
+    {
+      "nome": "ler-documento",
+      "arquivo": "ferramentas/ler-documento.mjs",
+      "sha": "sha256:afdf364489e8619d20b4dfdc4dbfcbcab58f4ecfc608abf01ba7ed91ee12f911"
+    },
+    {
+      "nome": "ler-excel",
+      "arquivo": "ferramentas/ler-excel.mjs",
+      "sha": "sha256:e89c1dbe1a6326c139fff87f7b8ef52a59207f7f10f276b3304f3bc743cd80e2"
+    }
+  ],
+  "contagem": {
+    "skills": 23,
+    "ferramentas": 5
+  }
+}
