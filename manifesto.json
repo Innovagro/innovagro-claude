@@ -2,7 +2,7 @@
   "manifesto": "innovagro-claude",
   "descricao": "Skills, ferramentas e agentes que o Claudinn instala. O atualizador compara este manifesto (do repo) com o instalado e traz so o que mudou. Do agente, atualiza SO os arquivos em 'gerenciado' (casa/ e skills/) — nunca o CLAUDE.md, que e da pessoa.",
   "raw_base": "https://raw.githubusercontent.com/Innovagro/innovagro-claude/main",
-  "versao": "2026-09-12.3",
+  "versao": "2026-09-13.1",
   "gerado_em": "2026-09-12",
   "skills": [
     {
@@ -50,6 +50,17 @@
       ]
     },
     {
+      "nome": "briefing-executivo",
+      "arquivo": "skills/briefing-executivo/SKILL.md",
+      "descricao": "Lê um documento longo (ou vários) e resume numa página só o que a pessoa precisa para decidir — o essencial, números-chave, prazos, riscos e as decisões. Use para \"resume esse documento\", \"briefing\", \"resumo executivo\", \"o que eu preciso saber desse relatório\", \"lê esse PDF pra mim\", \"me prepara pra ler isso\".",
+      "arquivos": [
+        {
+          "caminho": "skills/briefing-executivo/SKILL.md",
+          "sha": "sha256:ca4e3812045626765c0206f921bb73d4dc33ed9682fd7219a2c8d0371193d3f4"
+        }
+      ]
+    },
+    {
       "nome": "caixa-de-entrada",
       "arquivo": "skills/caixa-de-entrada/SKILL.md",
       "descricao": "Lê a caixa de entrada do Outlook — resume o que chegou, acha e-mail, mostra o que precisa de resposta. Só leitura. Use para \"o que chegou de importante hoje?\", \"resume meus e-mails\", \"o que eu preciso responder\", \"acha o e-mail do fulano\", \"tem e-mail sobre\", \"bom dia, o que tem pra mim\", \"minha agenda de hoje\".",
@@ -90,6 +101,17 @@
         {
           "caminho": "skills/consultar-documentos/SKILL.md",
           "sha": "sha256:1a444ce3777e5d55577875a46ca5a04a556130e11be671ba3d07fc7f7eac5568"
+        }
+      ]
+    },
+    {
+      "nome": "contrato-em-linguagem-simples",
+      "arquivo": "skills/contrato-em-linguagem-simples/SKILL.md",
+      "descricao": "Explica um contrato em português simples — o que você se obriga a fazer, dinheiro, prazos, como sair, multas e cláusulas arriscadas — e sugere perguntas para negociar. NÃO é parecer jurídico. Use para \"lê esse contrato\", \"o que esse contrato diz\", \"tem alguma pegadinha\", \"revisa esse contrato\", \"explica essa cláusula\", \"quanto pago de multa se sair\".",
+      "arquivos": [
+        {
+          "caminho": "skills/contrato-em-linguagem-simples/SKILL.md",
+          "sha": "sha256:369b7bf78b7aa8513adb65f7cf9e9a56939f8a203e825741c25adf779b1f51e5"
         }
       ]
     },
@@ -186,6 +208,28 @@
       ]
     },
     {
+      "nome": "pesquisa-de-mercado",
+      "arquivo": "skills/pesquisa-de-mercado/SKILL.md",
+      "descricao": "Pesquisa na internet mercado, concorrentes, preços e tendências e entrega um relatório com as fontes (link) e a data de cada informação. Use para \"pesquisa o mercado de\", \"quem são os concorrentes\", \"quanto os concorrentes cobram\", \"tendências do setor\", \"benchmark\", \"tamanho de mercado\".",
+      "arquivos": [
+        {
+          "caminho": "skills/pesquisa-de-mercado/SKILL.md",
+          "sha": "sha256:630b5d31f76884c9f20a647417eb5fd94985ad3a4b57ab327d8b74bfee5442b0"
+        }
+      ]
+    },
+    {
+      "nome": "planejamento-semanal",
+      "arquivo": "skills/planejamento-semanal/SKILL.md",
+      "descricao": "PRIORIZA a semana (ou o dia) a partir de uma lista de tarefas — decide o que fazer primeiro, o que delegar, adiar ou cortar, por impacto x esforço, e monta um plano com 3 prioridades e blocos de agenda. (Diferente de `planejar`, que DECOMPÕE um único pedido em passos.) Use para \"organiza minha semana\", \"prioriza essas tarefas\", \"tenho muita coisa\", \"o que faço primeiro\", \"planejamento do dia\".",
+      "arquivos": [
+        {
+          "caminho": "skills/planejamento-semanal/SKILL.md",
+          "sha": "sha256:bedab8002043e73b379d1db6293c11ce3e47764e03084ffab41b5fdb061a5897"
+        }
+      ]
+    },
+    {
       "nome": "planejar",
       "arquivo": "skills/planejar/SKILL.md",
       "descricao": "Quebra um pedido grande ou vago em passos pequenos, combina com a pessoa e executa um de cada vez. Use para \"me ajuda a organizar\", \"por onde eu começo\", \"tenho que fazer X até sexta\", \"é muita coisa\", \"planeja\", \"faz um plano\", ou quando o pedido tiver várias partes.",
@@ -203,7 +247,29 @@
       "arquivos": [
         {
           "caminho": "skills/planilha/SKILL.md",
-          "sha": "sha256:f2257e3f7d15226fa33f43f611870fe4b0c8d8ca520df02510ee0658811187ec"
+          "sha": "sha256:6bb050eda2b7c4996da02b519a96b3f6bdc4f7cc056b97bf306af2e86031cc80"
+        }
+      ]
+    },
+    {
+      "nome": "preparar-reuniao",
+      "arquivo": "skills/preparar-reuniao/SKILL.md",
+      "descricao": "Prepara o CONTEÚDO de uma reunião importante — objetivo, pauta, roteiro de perguntas, objeções prováveis com resposta e o próximo passo a pedir. (Para achar horário e mandar o convite é a skill marcar-reuniao; para a ata depois é ata-de-reuniao.) Use para \"prepara a reunião\", \"tenho uma call com\", \"o que eu pergunto\", \"roteiro de discovery\", \"pauta da reunião\", \"reunião amanhã com o cliente\".",
+      "arquivos": [
+        {
+          "caminho": "skills/preparar-reuniao/SKILL.md",
+          "sha": "sha256:93622be5a04341074cb703ac8256f534ae6a433165cacdb10363fbce08cdb55d"
+        }
+      ]
+    },
+    {
+      "nome": "proposta-one-pager",
+      "arquivo": "skills/proposta-one-pager/SKILL.md",
+      "descricao": "Monta uma proposta comercial de uma página, em PDF no padrão da casa, a partir de poucas informações (cliente, problema, solução, entregáveis, prazo, preço). Use para \"faz uma proposta\", \"proposta comercial\", \"one-pager\", \"orçamento pro cliente\", \"manda uma proposta\", \"monta a proposta desse cliente\".",
+      "arquivos": [
+        {
+          "caminho": "skills/proposta-one-pager/SKILL.md",
+          "sha": "sha256:2b7cd40ef984c7591cd5eb54e10368e94890edc589fe29ef9089640b1f84cd5b"
         }
       ]
     },
@@ -214,7 +280,7 @@
       "arquivos": [
         {
           "caminho": "skills/relatorio-pdf/SKILL.md",
-          "sha": "sha256:2ac072a288254e180a7c0ff408f7220a7817cc4818db15d710f4cf03a9696adb"
+          "sha": "sha256:b1148249a93be57340bcebe393cdc17661373a905efc969d1a228c849bf59a22"
         }
       ]
     },
@@ -493,7 +559,7 @@
     }
   ],
   "contagem": {
-    "skills": 24,
+    "skills": 30,
     "ferramentas": 5,
     "agentes": 2
   }

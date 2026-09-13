@@ -40,6 +40,9 @@ unidade diferente (kg × t).
 - Planilha arrumada: skill `criar-excel` (cabeçalho, filtro, R$, total).
 - Gráfico: `.png` novo na pasta do agente (matplotlib), e diga onde ficou.
 - Sempre termine com **Como cheguei nesses números** (2 a 5 linhas: aba, linhas, filtros, conta).
+- Se a pessoa pediu **análise** (não só uma conta), acrescente **3 a 5 leituras acionáveis** — o que
+  o dado sugere fazer, cada uma amarrada a um número da planilha (ex.: "Produto X caiu 20% em fev
+  vs jan — vale checar por quê"). Nunca aponte causa que o dado não mostra; separe fato de hipótese.
 
 ## Nunca
 - Nunca salve por cima da planilha original nem de arquivo que já existe.

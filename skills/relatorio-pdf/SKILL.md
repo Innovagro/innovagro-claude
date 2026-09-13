@@ -34,6 +34,17 @@ tabelas zebradas). Usa o Microsoft Edge que já vem no Windows, sem internet.
 3. **Diga onde ficou**: "PDF pronto: `relatorios\2026-09-13-embarques.pdf`."
    Se a pessoa quiser mandar por e-mail, use a skill `email` (anexo, rascunho, OK).
 
+## Quando o pedido é HTML, slides ou dashboard
+Às vezes a pessoa quer uma página bonita pra abrir no navegador, slides ou um dashboard — não um PDF
+pra anexar. Aí, em vez da ferramenta acima, gere **um único arquivo HTML** que se abre sozinho:
+- Grave `...\codespace\<agente>\rascunhos\AAAA-MM-DD-<nome>.html` com o CSS **embutido** (sem depender
+  de internet): fonte do sistema (`Segoe UI, Arial, sans-serif`), uma cor de destaque, tabelas simples.
+  Relatório/dashboard: A4 (`@page { size: A4; margin: 16mm }`). Slides: uma "página" por seção.
+- Abra pra ver: `Start-Process "C:\...\<nome>.html"`.
+- Vira PDF pela própria pessoa: "Ctrl+P → Salvar como PDF → marque Gráficos de fundo."
+Use este caminho quando pedirem "dashboard", "slides", "apresentação" ou "página HTML". Para o PDF
+oficial da casa (logo e cores Innovagro, pra anexar no e-mail), use a ferramenta acima.
+
 ## Se der errado
 - "Nao achei o Microsoft Edge" → skill `pedir-ajuda`.
 - Nome já existe → use `-v2`. Nunca apague o anterior.
